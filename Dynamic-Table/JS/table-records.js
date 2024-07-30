@@ -78,6 +78,11 @@ function editdata(e) {
 
     row.children[3].innerHTML = '';
     row.children[3].appendChild(inpContact);
+
+    row.children[0].setAttribute('data-original', name);
+    row.children[1].setAttribute('data-original', email);
+    row.children[2].setAttribute('data-original', dob);
+    row.children[3].setAttribute('data-original', contact);
 }
 
 function savedata(e){
@@ -86,15 +91,22 @@ function savedata(e){
     //  console.log("naam batao -",row.children[0].innerHTML);
     //  console.log("naam batao -",row.children[0]);
 
-    let name=row.children[0].querySelector('input').value;
-    let email=row.children[1].querySelector('input').value;
-    let dob=row.children[2].querySelector('input').value;
-    let contact=row.children[3].querySelector('input').value;
+    let nameInput = row.children[0].querySelector('input');
+    let emailInput = row.children[1].querySelector('input');
+    let dobInput = row.children[2].querySelector('input');
+    let contactInput = row.children[3].querySelector('input');
+
+    let name = nameInput.value.trim() === "" ? row.children[0].getAttribute('data-original') : nameInput.value;
+    let email = emailInput.value.trim() === "" ? row.children[1].getAttribute('data-original') : emailInput.value;
+    let dob = dobInput.value.trim() === "" ? row.children[2].getAttribute('data-original') : dobInput.value;
+    let contact = contactInput.value.trim() === "" ? row.children[3].getAttribute('data-original') : contactInput.value
 
     row.children[0].innerHTML=name;
     row.children[1].innerHTML=email;
     row.children[2].innerHTML=dob;
     row.children[3].innerHTML=contact;
+
+    
 }
 
 
