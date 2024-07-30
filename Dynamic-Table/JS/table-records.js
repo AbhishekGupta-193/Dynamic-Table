@@ -34,7 +34,7 @@ addBtn.addEventListener('click',()=>{
     row.insertCell(1).innerHTML = email;
     row.insertCell(2).innerHTML = dob;
     row.insertCell(3).innerHTML = contact;
-    row.insertCell(4).innerHTML = '<button class="edit-btn" onclick="editdata(this)">Edit</button>'+'<button class="save-btn" onclick="savedata(this)">Save</button>'+'<button class="dlt-btn" onclick="deletedata(this)">❌</button>';
+    row.insertCell(4).innerHTML = '<button class="edit-btn" onclick="editdata(this)"><img id="img-icon"src="/Dynamic-Table/Assets/edit.png"></button><button class="save-btn" onclick="savedata(this)"><img id="img-icon"src="/Dynamic-Table/Assets/save.png"></button><button class="dlt-btn" onclick="deletedata(this)"><img id="img-icon"src="/Dynamic-Table/Assets/delete.png"></button>';
     clearInputs();
     }
 })
@@ -47,7 +47,6 @@ function validateDate(dateString) {
 
 function editdata(e) {
     // console.log("edit btn clicked ");
-
     let row = e.parentNode.parentNode;
     let name = row.children[0].innerHTML;
     let email = row.children[1].innerHTML;
@@ -101,7 +100,6 @@ function savedata(e){
 
 function deletedata(e){
     // console.log("dlt btn clicked ")
-
     let row = e.parentNode.parentNode;
     row.parentNode.removeChild(row);
 };
