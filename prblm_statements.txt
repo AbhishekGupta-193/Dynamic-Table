@@ -1,0 +1,23 @@
+1. (Sushma and Rohit) Create a webpage that fetches data from a public API (e.g., GitHub API) and 
+    displays a list of repositories for a given user. Implement error handling for network issues 
+    and display appropriate messages for different error states
+
+2. (Mahesh and Sindhu) Design a multi-step form with validation at each step. Use JavaScript to 
+    handle form state and progression, ensuring that users cannot proceed to the next step until 
+    the current step is valid. Display a summary of all inputs before final submission.
+
+3. (Keshav and Hanuman) Build a dynamic search feature using jQuery and AJAX. When the user types
+    into the search bar, send an AJAX request to fetch search results and display them below the 
+    search bar in real-time. Implement debouncing to limit the number of requests sent.
+
+4. (Abhishek , Anurag and Mithesh) Create a dynamic table where users can add, edit, and delete 
+    rows using JavaScript. Implement event delegation to handle events on dynamically added rows.
+    Use CSS for styling and ensure the table is responsive.
+
+5.  (Priya ,Ritika and Mayank )Design a responsive photo gallery using CSS Flexbox. The gallery 
+    should display images in a masonry layout, adjusting the number of columns based on the screen 
+    size. Implement a hover effect to enlarge the image and show a caption.
+
+6.  (Ishu, Sneha and Mugesh) Design a to-do list application that saves tasks in the browser's local 
+    storage. Implement features such as adding, editing, deleting tasks, and marking tasks as 
+    complete. Ensure the tasks persist across page reloads and sessions.

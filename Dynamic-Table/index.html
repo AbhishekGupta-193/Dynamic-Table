@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Dynamic-Table/CSS/style.css">
+    <title>Form Page</title>
+</head>
+
+<body>
+    <div class="container">
+    <h2 class="title">Table Records</h2>
+    <table class="table">
+        <thead class="table_attributes">
+            <th class="table_inp">Full Name</th>
+            <th class="table_inp">Email</th>
+            <th class="table_inp">D.O.B</th>
+            <th class="table_inp">Mobile No</th>
+            <th class="table_inp">Functionality</th>
+        </thead>
+        
+        <tbody>
+            <td><input type="text" class="inp" id="fname" required></td>
+            <td><input type="email" class="inp" id="email" required></td>
+            <td><input type="date" class="inp" id="dob" required></td>
+            <td><input type="number" class="inp" id="contact" required></td>
+            <td><button class="add" id="add-btn"><img id="img-icon"src="/Dynamic-Table/Assets/plus.png"></button></td>
+        </tbody>
+
+        <tr>
+            <td class="table_val">Abhishek Kr Gupta</td>
+            <td class="table_val">abhishekkgupta193@gmail.com</td>
+            <td class="table_val">02-05-2002</td>
+            <td class="table_val">7992417318</td>
+            <td><button class="edit-btn" onclick="editdata(this)"><img id="img-icon"src="/Dynamic-Table/Assets/edit.png"></button><button class="save-btn" onclick="savedata(this)"><img id="img-icon"src="/Dynamic-Table/Assets/save.png"></button><button class="dlt-btn" onclick="deletedata(this)"><img id="img-icon"src="/Dynamic-Table/Assets/delete.png"></button></td>
+
+        </tr>
+       
+    </table>
+    <script src="/Dynamic-Table/JS/script.js"></script>
+</div>
+</body>
+
+</html>

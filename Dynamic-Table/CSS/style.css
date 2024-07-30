@@ -1,0 +1,132 @@
+body{
+    /* border: 2px solid blue; */
+    /* background-image: linear-gradient(to left top,rgb(152, 145, 145),white); */
+    background-repeat:no-repeat;
+}
+.container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* border: 2px solid black; */
+    /* background-image: linear-gradient(to left top,rgb(255, 252, 252),rgb(255, 251, 251)); */
+    /* background-repeat:no-repeat; */
+    box-shadow: 2px 2px 2px 2px  rgb(7, 147, 18);
+    border-radius: 8px;
+    height: 500px;
+}
+.title{
+    /* border: 2px solid red; */
+    margin: 1%;
+    margin-left: 25%;
+    text-align: center;
+    background-color: rgb(7, 147, 18);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sample_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.inputs{
+    width: 94%;
+    margin-left: 2%;
+    border: 2px solid rgb(7, 147, 18);
+
+}
+.inp{
+    border: none;
+    outline: none;
+    width: 98%;
+    height: 100%;
+    margin-right: 1%;
+    text-align: center;
+}
+.add{
+    /* margin-left: 3%; */
+    /* margin-right: 2%; */
+    /* background-color: rgb(7, 147, 18); */
+    color: white;
+    /* border-radius: 4px; */
+    /* font-size: 16px; */
+    border: none;
+    background-color:white ;
+}
+#img-icon{
+    /* border: 2px solid red; */
+    height: 25px;
+    width: 25px;
+
+}
+.edit-btn{
+    margin-left: 3%;
+    margin-right: 2%;
+    /* background-color: rgb(7, 147, 18); */
+    background-color:white ;
+
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+}
+.save-btn{
+    margin-left: 3%;
+    margin-right: 2%;
+    background-color: rgb(7, 147, 18);
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:white ;
+
+    border: none;
+}
+.delete{
+    background-color: rgb(230, 68, 32);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color:white ;
+
+    border: none;
+}
+
+.arrow_img{
+    margin-left: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.table{
+    width: 94%;
+    margin-left: 2%;
+    
+}
+.table_attributes{
+    border: 200px solid black;
+}
+.table_inp{
+    width: 20%;
+    border: 2px solid black;
+    border: 2px solid rgb(7, 147, 18);
+
+}
+td{
+    width: 20%;
+    border: 2px solid black;
+    text-align: center;
+    border: 2px solid rgb(7, 147, 18);
+
+
+}
+.dlt-btn{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
